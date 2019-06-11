@@ -76,7 +76,7 @@ def gzip_verifies_fastq(data_dir, verified_samples):
     for sample in verified_samples:
         sample_fastq = data_dir + '/' + sample + '.fastq'
         if os.path.exists(sample_fastq):
-            print('gzip ', sample_fastq)
+            print('gzip ', sample_fastq, ' &')
 
 def main():
     parser = argparse.ArgumentParser(description="use md5 to verifies the integrities of the file")
